@@ -15,8 +15,8 @@ namespace Algo_proj_01_GUI
 {
     public partial class Form1 : Form
     {
-        string[] subArrays = new string[35];
-        private Dictionary<string, string> allData = Utility.getAllData(); 
+        readonly string[] subArrays = new string[35];
+        private readonly Dictionary<string, string> allData = Utility.getAllData(); 
         public Form1()
         {
             InitializeComponent();
@@ -25,29 +25,23 @@ namespace Algo_proj_01_GUI
                 // just to make 2 digit num i.e 01,02,03 instead of 1, 2, 3
                     subArrays[i] = string.Format("MaxSubArray_{0:00}", i+1); 
             }
-            comboBox1.DataSource = subArrays;
+            comboBox1.DataSource = subArrays; // populate the comboBox with csv File names
 
-        }
-
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string paddingIndex = string.Format("{0:00}", comboBox1.SelectedIndex+1);
+            string paddingIndex = string.Format("{0:00}", comboBox1.SelectedIndex+1); // files under 10 are 01,02,03 etc.. padding an extra 0
             string file = "MaxSubArray_" + paddingIndex;
             var data =
-                allData[file].Trim()
-                    .Replace("\r\n", "")
+                allData[file].Trim() // dictionary called allData has a key(file Name i.e. MaxSubArray_NN) and a value( the data in the file)
+                    .Replace("\r\n", "") 
                     .Split(',')
-                    .Where(f => !string.IsNullOrEmpty(f))
-                    .Select(d => Convert.ToInt32(d))
+                    .Where(f => !string.IsNullOrEmpty(f)) // There was an empty space at the end of the file. Don't want that in the array
+                    .Select(d => Convert.ToInt32(d)) // Convert the string to Integers
                     .ToArray();
-            var getAnswer = Utility.FindMaximumSubArray(data, 0, data.Length - 1);
-            MessageBox.Show(outputformat(file, getAnswer));
+            var getAnswer = Utility.FindMaximumSubArray(data, 0, data.Length - 1); // pass the data to the function to get the contigious subArray
+            MessageBox.Show(outputformat(file, getAnswer)); // output everything to a messageBox.
 
         }
 
