@@ -1,0 +1,9 @@
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\bin\Debug\Algo-proj-01-GUI.exe.config
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\bin\Debug\Algo-proj-01-GUI.exe
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\bin\Debug\Algo-proj-01-GUI.pdb
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\obj\Debug\Algo-proj-01-GUI.csprojResolveAssemblyReference.cache
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\obj\Debug\Algo_proj_01_GUI.Form1.resources
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\obj\Debug\Algo_proj_01_GUI.Properties.Resources.resources
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\obj\Debug\Algo-proj-01-GUI.csproj.GenerateResource.Cache
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\obj\Debug\Algo-proj-01-GUI.exe
+C:\Users\david-lewis\Desktop\Spring 2016\Algorithms\Algo-proj-01-GUI\Algo-proj-01-GUI\obj\Debug\Algo-proj-01-GUI.pdb
